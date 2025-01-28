@@ -5,8 +5,8 @@ import SecondConSec from './secondConSec';
 const ConcourseSection = () => {
     return (
         <div>
-          <FirstConSec />
-          <SecondConSec />
+          <div id='concourse'><FirstConSec /></div>
+          <div id='firstSec'><SecondConSec /></div>
         </div>
       );
     };
