@@ -32,14 +32,14 @@ const ContactUs = () => {
         setSuccess(null);
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/contacts/', {
+            const response = await axios.post('https://api-cansat.cmspace.uz/api/contacts/', {
                 first_name: formData.firstName,
                 last_name: formData.lastName,
                 email: formData.email,
                 phone_number: formData.phone,
                 message: formData.message,
                 agreement: formData.agreement,
-            }, {
+              },{
                 auth: {
                     username: 'admin', 
                     password: 'Adminuzcansat123#@!', 
